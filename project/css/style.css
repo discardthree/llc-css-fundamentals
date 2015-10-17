@@ -1,0 +1,22 @@
+header {
+}
+
+ .profile {
+   background: #E8C95D; /*yellow*/
+ }
+
+ .work-experience {
+   background: #D16B54; /*red*/
+ }
+
+ .skills {
+   background: #A9D8C8; /*seafoamy blue*/
+ }
+
+ .education {
+   background: #604965; /*violet*/
+ }
+
+ .contact {
+   background: #B9B09F; /*dove grey*/
+ }
