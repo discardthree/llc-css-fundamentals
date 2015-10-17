@@ -1,17 +1,31 @@
-header {
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+header {
+    padding:1px
+}
+
+.content-wrap {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
  .profile {
-   background: #E8C95D; /*yellow*/
+     background: #E8C95D; /*yellow*/
  }
 
  .work-experience {
-   background: #D16B54; /*red*/
+   background: #A9D8C8; /*seafoamy blue*/
  }
 
  .skills {
-   background: #A9D8C8; /*seafoamy blue*/
+   background: #D16B54; /*red*/
  }
 
  .education {
