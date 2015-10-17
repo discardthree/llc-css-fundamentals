@@ -1,4 +1,5 @@
 header {
+
 }
 
  .profile {
@@ -20,3 +21,27 @@ header {
  .contact {
    background: #B9B09F; /*dove grey*/
  }
+
+body {
+  font-family: "gentium book basic";
+}
+
+header h1 {
+  /* For all of h1 except the accent words which will follow 'span' */
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0px 0px 16px;
+  text-transform: uppercase;
+}
+
+.lowlight-white {
+  font-family: "gentium book basic";
+  text-transform: none;
+  font-style: italic;
+  /* For the Patricia in Patricia Gillett-Kawamoto */
+}
+
+h2 {
+  font-family: "open sans"
+}
