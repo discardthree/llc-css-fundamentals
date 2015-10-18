@@ -5,39 +5,42 @@ html {
     box-sizing: inherit;
 }
 
-header {
-    padding:1px
+.clearfix:after { /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.content-wrap {
-  max-width: 1000px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 60px 0;
-}
+/* COLOUR PALETTE REFERENCE:
+Wes Anderson palette
+yellow: #E8C95D
+seafoamy blue: #A9D8C8
+red: #D16B54
+violet: #433447
+dove grey: #B9B09F
 
- .profile {
-     background: #E8C95D; /*yellow*/
- }
+Wes Anderson palette LIGHTENED:
+yellow: #EDD581
+seafoamy blue: #BCE0D3
+red: #D77B68
+violet: #95789C
+dove grey: #B9B09F
 
- .work-experience {
-   background: #A9D8C8; /*seafoamy blue*/
- }
+book palette
+#833B46; /*Autobiography red-orange*
+#5C2F46; /*War and Peace burgundy*
+#833B46; /*The red and the black purple*
+#204464; /*Vanity Fair royal blue*
+#2F3C5F; /*The House of the Seven Gables navy*
+#22424F; /*Of Human Bondage teal*
+*/
 
- .skills {
-   background: #D16B54; /*red*/
- }
-
- .education {
-   background: #604965; /*violet*/
- }
-
- .contact {
-   background: #B9B09F; /*dove grey*/
- }
-
+/*================
+ tag styling
+ =================*/
 body {
   font-family: "gentium book basic";
+  color: #FFFFFF;
 }
 
 header h1 {
@@ -59,3 +62,124 @@ header h1 {
 h2 {
   font-family: "open sans"
 }
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+a {
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-style: italic;
+}
+
+a:hover {
+    color: #999999;
+}
+
+.company {
+  font-family: "gentium book basic";
+  text-transform: none;
+  font-style: italic;
+}
+
+/*================
+ getting content into a column in the centre
+ =================*/
+.content-wrap {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+
+/*================
+ header
+ =================*/
+
+header {
+    background: url(../images/bookshelf.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    padding: 150px 0;
+}
+
+/*================
+ Profile section
+ =================*/
+.profile {
+   background: #204464; /*Vanity Fair royal blue*/
+   clear: both;
+ }
+
+ .profile h2 {
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.profile img {
+  float: left;
+  width: 27%;
+  margin-right: 3%;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+}
+
+.summary {
+  width: 70%;
+}
+
+
+/*================
+ Work experience section
+ =================*/
+.work-experience {
+   background: #833B46; /*Autobiography red-orange*/
+ }
+
+.details {
+  width: 30%;
+  float: left;
+}
+
+.description {
+  width: 70%;
+  float: right;
+}
+
+.item {
+    border-bottom: 1px solid #ccc;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+
+
+
+ .skills {
+   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+               url(../images/torii.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   position: 40%;
+ }
+
+ .education {
+   background: #5C2F46; /*War and Peace burgundy*/
+ }
+
+ .contact {
+   background: #2F3C5F; /*The House of the Seven Gables navy*/
+ }
