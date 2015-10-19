@@ -125,12 +125,11 @@ header h1 {
   text-transform: uppercase;
 }
 
-header
-
 .accent-font {
   font-family: "gentium book basic", serif;
   text-transform: none;
   font-style: italic;
+  color: #F1DEB8; /*Gold gilt*/
   /* For the Patricia in Patricia Gillett-Kawamoto */
 }
 
