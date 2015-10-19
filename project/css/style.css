@@ -11,21 +11,8 @@ html {
   clear: both;
 }
 
+
 /* COLOUR PALETTE REFERENCE:
-Wes Anderson palette
-yellow: #E8C95D
-seafoamy blue: #A9D8C8
-red: #D16B54
-violet: #433447
-dove grey: #B9B09F
-
-Wes Anderson palette LIGHTENED:
-yellow: #EDD581
-seafoamy blue: #BCE0D3
-red: #D77B68
-violet: #95789C
-dove grey: #B9B09F
-
 book palette
 #833B46; /*Autobiography red-orange*
 #5C2F46; /*War and Peace burgundy*
@@ -33,7 +20,10 @@ book palette
 #204464; /*Vanity Fair royal blue*
 #2F3C5F; /*The House of the Seven Gables navy*
 #22424F; /*Of Human Bondage teal*
+#5B322E; /*Divine Comedy rust*
+#F1DEB8; /*Gold gilt*
 */
+
 
 /*================
  tag styling
@@ -41,28 +31,29 @@ book palette
 body {
   font-family: "gentium book basic";
   color: #FFFFFF;
+  background: url(../images/bookshelf.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.5;
 }
 
-header h1 {
+h1 {
   /* For all of h1 except the accent words which will follow 'span' */
   font-family: "open sans";
   font-weight: 700;
   font-size: 48px;
-  margin: 0px 0px 16px;
-  text-transform: uppercase;
-}
-
-.lowlight-white {
-  font-family: "gentium book basic";
-  text-transform: none;
-  font-style: italic;
-  /* For the Patricia in Patricia Gillett-Kawamoto */
 }
 
 h2 {
-  font-family: "open sans"
+  font-family: "open sans";
+  font-size: 32px;
+  color: #F1DEB8; /*Gold gilt*/
 }
 
+h3 {
+  font-size: 26px;
+}
 h1, h2, h3 {
     font-weight: 400;
     margin: 0;
@@ -70,6 +61,11 @@ h1, h2, h3 {
 
 h4 {
   margin: 0;
+  font-size: 22px;
+}
+
+p {
+  font-size: 20px;
 }
 
 a {
@@ -82,11 +78,6 @@ a:hover {
     color: #999999;
 }
 
-.company {
-  font-family: "gentium book basic";
-  text-transform: none;
-  font-style: italic;
-}
 
 /*================
  getting content into a column in the centre
@@ -104,26 +95,72 @@ a:hover {
  =================*/
 
 header {
-    background: url(../images/bookshelf.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
     text-align: center;
     padding: 150px 0;
+    /*text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;*/
+    color: #F1DEB8; /*Gold gilt*/
+}
+
+.content-wrap-header {
+  background: rgba(20, 38, 46, 0.87); /*Darkened version of Of Human Bondage*/
+  /*background: rgba(34, 66, 79, 0.6);*/
+  /* rgba(39,22,20,0.75); /*Darkened version of Divine Comedy Rust*/
+  display: inline-block;
+  margin: 0 auto;
+  padding: 30px;
+  border: 4px ridge #F1DEB8; /*Gold gilt*/
+  /*border-radius: 30px;*/
+}
+
+header h1 {
+  margin: 0px 0px 16px;
+  text-transform: uppercase;
+}
+
+header
+
+.accent-font {
+  font-family: "gentium book basic";
+  text-transform: none;
+  font-style: italic;
+  /* For the Patricia in Patricia Gillett-Kawamoto */
+}
+
+.download {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: #2980b9;
+    padding: 18px;
+    text-decoration: none; /* removes underline */
+    color: #fff;
 }
 
 /*================
  Profile section
  =================*/
 .profile {
-   background: #204464; /*Vanity Fair royal blue*/
-   clear: both;
+  background: linear-gradient(rgba(32, 68, 100, 0.92), rgba(32, 68, 100, 1)); /*Vanity Fair royal blue*/
+ clear: both;
  }
 
- .profile h2 {
-    border: none;
-    display: inline-block;
-    padding: 10px 20px;
+.profile h2 {
+  color: #2F3C5F; /*The House of the Seven Gables navy*/
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #F1DEB8; /*Gold gilt*/
+  transform: rotate(-4deg);
+  margin-bottom: 10px;
+}
+
+.profile h2:hover {
+    /* This is the bounce CSS */
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
 }
 
 .profile img {
@@ -131,8 +168,9 @@ header {
   width: 27%;
   margin-right: 3%;
   border-radius: 50%;
-  border: 5px solid #ddd;
+  border: 5px solid #F1DEB8; /*Gold gilt*/
 }
+
 
 .summary {
   width: 70%;
@@ -157,29 +195,82 @@ header {
 }
 
 .item {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #F1DEB8; /*Gold gilt*/
+    margin-bottom: 15px;
 }
 
 .item:last-child {
     border-bottom: none;
 }
 
+.company {
+  font-family: "gentium book basic";
+  text-transform: none;
+  font-style: italic;
+  margin-bottom: 5px;
+}
 
 
-
+/*================
+ Skills
+ =================*/
  .skills {
-   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-               url(../images/torii.jpg);
+   background: linear-gradient(rgba(20, 38, 46, 0.9), rgba(34, 66, 79, 0.9)),
+               url(../images/bookshelf.jpg); /*gradient is from a darkened Of Human Bondage color to the regular Of Human Bondage color*/
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
    position: 40%;
+   text-align: center;
  }
 
+ .skills .columns {
+   width: 33.33%;
+   float: left;
+ }
+
+ .skills ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ .skills-list i, .skills-list h4 {
+     color: #F5E2CD; /*Gold gilt*/
+ }
+
+.skills-list ul li {
+   font-size: 18px;
+ }
+
+.skills-circles ul li {
+  background: #22424F; /*Of Human Bondage teal (34, 66, 79)*/
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #F1DEB8; /*Gold gilt*/
+  line-height: 150px;
+  font-size: 18px;
+}
+
+.skills-circles span {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+
+ /*================
+  Education
+  =================*/
  .education {
    background: #5C2F46; /*War and Peace burgundy*/
  }
 
+
+ /*================
+  contact
+  =================*/
  .contact {
    background: #2F3C5F; /*The House of the Seven Gables navy*/
  }

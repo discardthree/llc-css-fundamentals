@@ -2,14 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Patricia L. Gillett-Kawamoto | Researcher-Developer Extraordinaire</title>
+		<title>Patricia L. Gillett-Kawamoto | Researcher and Developer</title>
 
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<!-- Google fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Pacifico|Gentium+Book+Basic:400,400italic|Open+Sans:700' rel='stylesheet' type='text/css'>
 
 		<!-- icon fonts -->
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 
@@ -17,10 +19,11 @@
 	</head>
 	<body>
 		<!-- HEADER -->
+		<a class="download" href="resume.pdf" download>Download resume (pdf)</a>
 		<header>
 			<div class="content-wrap-header">
-				<h1><span class="lowlight-white">Patricia L.</span> Gillett-Kawamoto</h1>
-				<h2>Researcher-Developer Extraordinaire</h2>
+				<h1><span class="accent-font">Patricia L.</span> Gillett-Kawamoto</h1>
+				<h2>Researcher and Developer</h2>
 			</div>
 		</header>
 
@@ -29,7 +32,7 @@
 			<div class="content-wrap clearfix">
 				<img src="images/profile.jpg" alt="Your Name">
 				<div class="summary">
-					<h2>Hello!</h2>
+					<h2 class="animated">Hello!</h2>
 					<p>[Profile summary here] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laboriosam officia blanditiis tempora sit fugiat molestiae iusto impedit ipsa cum, asperiores laborum, esse, doloribus explicabo! Autem, distinctio provident itaque non.</p>
 					<p>I'm an active member of blah blah blah: <a href="#">link</a> and <a href="#">link</a>.</p>
 					<p>Or another paragraph!</p>
@@ -52,7 +55,6 @@
 						<p class="date">July 2011 - July 2014</p>
 					</div>
 					<div class="description">
-						Description for item 1.<br>
 						<p><strong>Job title 1:</strong> [You can use this portion if you held several positions in the company.] Suspendisse dignissim nisi non velit interdum, in condimentum augue varius. Nullam ac felis eu lacus rhoncus posuere. Fusce pretium auctor bibendum. Suspendisse rutrum rhoncus purus sed dapibus. Nulla in viverra justo. Quisque id sapien sed urna lobortis rutrum eu sed enim. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus.</p>
 
 						<p><strong>Job title 2:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptas, odio deleniti omnis. Eaque, numquam itaque! Maxime, iure dolore ratione tenetur. Sunt nam maxime repellendus! Vitae, natus fugit earum consectetur.</p>
@@ -95,32 +97,45 @@
 			<div class="content-wrap">
 				<h2>Skills</h2>
 
-				<div class="skills-list">
-					<h3>List Option / Title</h3>
+				<div class="skills-list clearfix">
+					<h3>Computational Skills</h3>
 
 					<div class="columns">
-						<h4>Best at:</h4>
+						<h4>Scientific computing with Python:</h4>
 						<ul>
-							<li>Python</li>
-							<li>Mathematical Modeling</li>
-							<li>Remote Collaboration</li>
-							<li>LaTeX</li>
+							<li><i class="fa fa-star"></i> General (numpy, scipy)</li>
+							<li><i class="fa fa-star"></i> Conic optimization (cvxpy, cvxopt)</li>
+							<li><i class="fa fa-star"></i> Using the NEOS server (xml-rpc)</li>
+							<li><i class="fa fa-star"></i> Data analysis (pandas)</li>
+							<li><i class="fa fa-star-half-full"></i> Machine learning (scikit-learn)</li>
 						</ul>
 					</div>
 
 					<div class="columns">
-						<h4>Worked with:</h4>
+						<h4>Mathematical languages:</h4>
 						<ul>
-							<li>Matlab</li>
-							<li>R</li>
+							<li><i class="fa fa-star"></i>GAMS</li>
+							<li><i class="fa fa-star"></i>AMPL</li>
+							<li><i class="fa fa-star-half-full"></i>Matlab (general use, cvx, SDPT3)</li>
+							<li><i class="fa fa-star-half-full"></i>R</li>
 						</ul>
 					</div>
 
 					<div class="columns">
 						<h4>Learning:</h4>
 						<ul>
-							<li>CSS</li>
-							<li>Stylus</li>
+							<li>Test driven development</li>
+							<li>Raspberry Pi</li>
+						</ul>
+					</div>
+
+					<div class="columns">
+						<h4>Off topic:</h4>
+						<ul>
+							<li><i class="fa fa-superscript"></i>  Mathematical Modeling</li>
+							<li>Fluent conversational Japanese</li>
+							<li>3D printing</li>
+							<li>Hydroponic gardening</li>
 						</ul>
 					</div>
 				</div>
@@ -128,10 +143,9 @@
 				<div class="skills-circles">
 					<h3>Circle Option / Title</h3>
 					<ul>
-						<li><span>Social Media</span></li>
-						<li><span>Marketing Strategy</span></li>
-						<li><span>Brand Identity</span></li>
-						<li><span>Graphic Design</span></li>
+						<li><span>Git</span></li>
+						<li><span>LaTeX</span></li>
+						<li><span></span></li>
 					</ul>
 				</div><!-- close .skills-circles -->
 			</div><!-- close .skills-list -->
@@ -162,18 +176,18 @@
 				<h2>Let's keep in touch!</h2>
 
 				<div class="social">
-					<a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-					<a href="github.com/discardthree" title="Github"><i class="fa fa-github-alt"></i></a>
-					<a href="http://www.facebook.com/plgillett/" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<p>LinkedIn: <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a><br>
+					Github: <a href="github.com/discardthree" title="Github"><i class="fa fa-github-alt"></i></a><br>
+					Facebook: <a href="http://www.facebook.com/plgillett/" title="Facebook"><i class="fa fa-facebook"></i></a>
+					</p>
 				</div>
 
-				<p><a href="patricia-lynn.gillett@polymtl.ca">patricia-lynn.gillett@polymtl.ca</a></p>
-				<p><a href="discardthree@gmail.com">discardthree@gmail.com</a></p>
-				<p>123 Anywhere St.<br>
-				 Montreal, QC</p>
+				<p>E-mail 1: <a href="patricia-lynn.gillett@polymtl.ca">patricia-lynn.gillett@polymtl.ca</a><br>
+				E-mail 2: <a href="discardthree@gmail.com">discardthree@gmail.com</a> (this one will remain active beyond graduation)<br>
+				Currently located in Montreal, QC, Canada.</p>
 
 				<footer>
-					<p class="copyright">Copyright &#169; 2014 by Your Name</p>
+					<p class="copyright">Copyright &#169; 2015 by Patricia Gillett-Kawamoto</p>
 				</footer>
 			</div>
 		</section>
